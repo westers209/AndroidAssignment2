@@ -26,7 +26,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     @Override
     public void onBindViewHolder(@NonNull CustomAdapter.CustomViewHolder customViewHolder, int i) {
         Picasso.get().load(dataSet.data.get(i).collectionName).into(customViewHolder.collection);
-        customViewHolder.track.setText(dataSet.data.get(i).trackName);
+        customViewHolder.track.setText(dataSet.data.get(i).artworkUrl60);
         customViewHolder.artist.setText(dataSet.data.get(i).artistName);
         customViewHolder.price.setText(dataSet.data.get(i).trackPrice);
     }
